@@ -1183,13 +1183,12 @@ function renderHome(){
 // ══ INIT ══
 renderHome();updateRing();setInterval(updateRing,60000);
 
-// ── PWA Service Worker ──
+// PWA Service Worker
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('./sw.js').catch(()=>{});
   });
 }
-
 </script>
 </body>
 </html>
